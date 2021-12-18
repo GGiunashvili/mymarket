@@ -596,6 +596,185 @@ span.header-divide-line-second {
   }
 }
 
+.search-more__slider {
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+@media (min-width: 768px) {
+  .search-more__slider {
+    margin-bottom: 0px;
+  }
+}
+
+.search-more__slider__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .search-more__slider__box {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+.search-more__slider__box__title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: -webkit-fill-available;
+}
+
+@media (min-width: 992px) {
+  .search-more__slider__box__title-box {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-more__slider__box__title-box {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.search-more__slider__box__title-box__component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 90px);
+  margin-right: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .search-more__slider__box__title-box__component {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.search-more__slider__box__title-box__component__p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  margin-right: 16px;
+  font-family: font-bold;
+  font-size: 18px;
+}
+
+.search-more__slider__box__title-box__component__swiper {
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  .search-more__slider__box__title-box__component__swiper {
+    margin-top: 0px;
+  }
+}
+
+.search-more__slider__box__title-box__component__swiper__wrapper__slide {
+  border-radius: 16px;
+  max-width: 117px;
+}
+
+.search-more__slider__box__title-box__component__swiper__wrapper__slide__button {
+  border-radius: 20px;
+  background-color: white;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-size: 12px;
+  font-family: font-bold;
+  text-decoration: unset;
+  color: #212529;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.search-more__slider__box__button-next {
+  position: unset;
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url(https://www.mymarket.ge/react/build/static/media/slider-right.f78d9890.svg);
+  width: 32px;
+  height: 32px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 992px) {
+  .search-more__slider__box__button-next {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.search-more__slider__box__button-next::after {
+  content: "";
+}
+
+.search-more__slider__box__button-prev {
+  position: unset;
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url(https://www.mymarket.ge/react/build/static/media/slider-left.90b7afc8.svg);
+  width: 32px;
+  height: 32px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto;
+  margin-right: 6px;
+}
+
+@media (min-width: 992px) {
+  .search-more__slider__box__button-prev {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.search-more__slider__box__button-prev::after {
+  content: "";
+}
+
 .search-more__title-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1217,8 +1396,6 @@ span.header-divide-line-second {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 16px;
-  padding-left: 16px;
   position: relative;
 }
 
@@ -1282,7 +1459,7 @@ span.header-divide-line-second {
       -ms-flex-align: center;
           align-items: center;
   white-space: nowrap;
-  margin-right: 10px;
+  margin-right: 16px;
   font-family: font-bold;
 }
 
