@@ -141,6 +141,7 @@ header{
 }
 
 .header-navigation{
+  position: relative;
   &__add-product{
     display: flex;
     align-items: center;
@@ -178,6 +179,10 @@ header{
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    &:hover+.header-navigation__pop-up-ul{
+      display: flex;
+      flex-direction: column;
+    }
     &:hover{
       background-color: #f1f3f6;
     }
@@ -234,6 +239,37 @@ header{
     &__span{
       font-size: 12px;
       font-family: font-bold;
+    }
+  }
+
+  &__pop-up-ul{
+    display: none;
+    min-width: 140px; 
+    padding-top: 24px; 
+    padding-bottom: 24px; 
+    background: white; 
+    position: absolute; 
+    top: 102px;
+    z-index: 2; 
+    right: 0;
+    border-radius: 16px;
+    border: 1px solid black;
+    &__li{
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      // color: #8996ae;
+
+      &:hover{
+        background-color: #f1f3f6;
+      }
+      &__a{
+        font-size: 14px;
+        font-family: font-medium;
+        color: #272a37;
+        text-decoration: unset;
+      }
     }
   }
 }
@@ -650,15 +686,14 @@ span.header-divide-line-second{
   border-radius: 16px;
   padding-left: 24px;
   padding-right: 24px;
-  margin-bottom: 200px;
+  margin-bottom: 56px;
   height: -webkit-fill-available;
-  @media (min-width: 768px){
+  @media (min-width: 992px){
     flex-direction: row;
   }
   &__column-one{
     &__box{
       width: 100%;
- 
       &__img{
         height: 150px;
         object-fit: contain;
@@ -677,12 +712,16 @@ span.header-divide-line-second{
       padding-right: 80px;
     }
     padding-top: 25px;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
     @media (min-width: 768px){
       padding-top: unset;
       padding-bottom: unset;
     }
     &__box{
+      padding-bottom: 41px;
+      @media (min-width: 992px){
+        padding-bottom: 17px;
+      }
       &__h2{
         font-size: 24px;
         font-family: font-bold;
@@ -720,10 +759,340 @@ span.header-divide-line-second{
 
 
 
+.vip-content{
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  padding: 24px 12px;
+  @media (min-width: 768px){
+    padding: 40px 32px;
+    margin-bottom: 56px;
+  }
+  &__title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    &__s-vip{
+      background-color: #fec900;
+      border-radius: 12px;
+      padding: 6px 7px;
+      margin-right: 10px;
+      &__text{
+        font-size: 10px;
+        font-family: font-bold;
+        color: white;
+      }
+    }
+    &__p{
+      color: #272a37;
+      font-size: 16px;
+      font-family: font-bold;
+      margin-right: 10px;
+    }
+    &__all-products{
+      font-family: font-medium;
+      color: #4a6cfa;
+      font-size: 13px;
+      text-decoration: underline;
+      
+    }
+  }
+
+  &__slider{
+    &__swiper{
+      overflow: hidden;
+      &__wrapper{
+        &__slide{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          &__img-box{
+            border-radius: 10px;
+            height: 130px;
+            &__img{
+              border-radius: 10px;
+
+            }
+          }
+          &__title-box{
+            width: 100%;
+            justify-content: flex-start;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 18px;
+            &__title{
+              color: #272a37;
+              font-size: 14px;
+              margin-bottom: 10px;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-align: start;
+              font-family: font-medium;
+              &:hover{
+                color: #325afa;
+                text-decoration: underline;
+              }
+            }
+            &__price{
+              line-height: 21px;
+              font-size: 12px;
+              font-family: font-bold;
+              color: #8996ae;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 
 
+
+
+
+.category{
+  &__slider{
+    margin-bottom: 40px;
+    @media (min-width: 768px){
+      margin-bottom: 100px;
+    }
+    &__swiper{
+      &__wrapper{
+        justify-content: space-between;
+        &__slide{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: unset!important;
+          text-decoration: unset;
+          &:hover > &__box {
+            background: #fec900;
+          }
+          &__box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            
+            &__img{
+          
+            }
+
+          }
+          &__title{
+            color: #272a37;
+            font-size: 13px;
+            font-family: font-bold;
+            text-transform: uppercase;
+            margin-top: 16px;
+            text-decoration: unset;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.recomended{
+  &__slider{
+    margin-bottom: 200px;
+    padding: 0;
+    @media (min-width: 768px){
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+    &__box{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // background-color: red;
+      padding-right: 16px;
+      padding-left: 16px;
+      position: relative;
+      @media (min-width: 768px){
+      padding-right: 0px;
+      padding-left: 0px;
+      }
+      &__title-box{
+        display: flex;
+        align-items: flex-start;
+        width: -webkit-fill-available;
+        @media (min-width: 992px){
+          margin-bottom: 8px;
+        }
+        @media (min-width: 768px){
+          align-items: center;
+        }
+        &__component{
+          display: flex;
+          width: calc(100% - 90px);
+          margin-right: 10px;
+          flex-direction: column;
+          @media (min-width: 992px){
+            flex-direction: row;
+          }
+          &__p{
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            margin-right: 10px;
+            font-family: font-bold;
+          }
+          &__swiper{
+            margin-top: 30px;
+            @media (min-width: 992px){
+              margin-top: 0px;
+            }
+            &__wrapper{
+              &__slide{
+                border-radius: 16px;
+                &__button{
+                  border-radius: 20px;
+                  background-color: white;
+                  -webkit-transition: .1s ease-in-out;
+                  transition: .1s ease-in-out;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  margin-right: 8px;
+                  padding-right: 12px;
+                  padding-left: 12px;
+                  font-size: 12px;
+                  font-family: font-bold;
+                  text-decoration: unset;
+                  color: #212529;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;              
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__button-next{
+        position: unset;
+        background: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-image: url(https://www.mymarket.ge/react/build/static/media/slider-right.f78d9890.svg);
+        width: 32px;
+        height: 32px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;    
+        @media (min-width: 992px){
+          width: 42px;
+          height: 42px;
+        }
+        &::after{
+          content: "";
+        }
+      }
+      &__button-prev{
+        position: unset;
+        background: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-image: url(https://www.mymarket.ge/react/build/static/media/slider-left.90b7afc8.svg);
+        width: 32px;
+        height: 32px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: auto;
+        margin-right: 6px;
+        @media (min-width: 992px){
+          width: 42px;
+          height: 42px;
+        }
+        &::after{
+          content: "";
+        }
+        
+      }
+
+    }
+    &__swiper{
+      &__wrapper{
+        justify-content: space-between;
+        &__slide{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: unset!important;
+          text-decoration: unset;
+          &:hover > &__box {
+            background: #fec900;
+          }
+          &__box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            width: 100%;
+            height: 120px;
+            border-radius: 12px;
+            @media (min-width: 768px){
+              height: 210px;
+            }
+            &__img{
+              border-radius: 12px;
+            }
+
+          }
+          &__title{
+            color: #272a37;
+            font-size: 13px;
+            font-family: font-bold;
+            text-transform: uppercase;
+            margin-top: 16px;
+            text-decoration: unset;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 
