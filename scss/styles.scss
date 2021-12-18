@@ -443,7 +443,7 @@ span.header-divide-line-second{
 }
 
 .search-more{
-  margin-top: 24px;
+  margin-top: 40px;
   margin-bottom: 24px;
   @media (min-width: 768px){
     margin-top: 60px;
@@ -1056,11 +1056,15 @@ span.header-divide-line-second{
 
 .recomended{
   &__slider{
-    margin-bottom: 200px;
+    margin-bottom: 40px;
     padding: 0;
+    padding-left: 16px;
     @media (min-width: 768px){
       padding-right: 16px;
       padding-left: 16px;
+    }
+    @media (min-width: 992px){
+      margin-bottom: 60px;
     }
     &__box{
       display: flex;
@@ -1186,7 +1190,7 @@ span.header-divide-line-second{
         &__slide{
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: flex-start;
           background-color: unset!important;
           text-decoration: unset;
           &:hover > &__box {
@@ -1217,6 +1221,18 @@ span.header-divide-line-second{
             text-decoration: unset;
             line-height: 14px;
           }
+          &__price{
+            color: #8996ae;
+            font-size: 12px;
+            font-family: font-bold;
+            text-transform: uppercase;
+            margin-top: 4px;
+            text-decoration: unset;
+            line-height: 14px;
+            @media (min-width: 768px){
+              margin-top: 10px;
+            }
+          }
         }
       }
     }
@@ -1225,6 +1241,153 @@ span.header-divide-line-second{
 
 
 
+
+.oriented-prod{
+  &__slider{
+    margin-bottom: 40px;
+    padding: 0;
+    padding-left: 16px;
+    @media (min-width: 768px){
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+    @media (min-width: 992px){
+      margin-bottom: 60px;
+    }
+    &__box{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // background-color: red;
+      // padding-right: 16px;
+      // padding-left: 16px;
+      position: relative;
+      @media (min-width: 768px){
+      padding-right: 0px;
+      padding-left: 0px;
+      }
+      &__title-box{
+        display: flex;
+        align-items: flex-start;
+        width: -webkit-fill-available;
+        @media (min-width: 992px){
+          margin-bottom: 8px;
+        }
+        @media (min-width: 768px){
+          align-items: center;
+        }
+        &__component{
+          display: flex;
+          width: calc(100% - 90px);
+          margin-right: 10px;
+          flex-direction: column;
+          @media (min-width: 992px){
+            flex-direction: row;
+          }
+          &__p{
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            margin-right: 16px;
+            font-family: font-bold;
+            font-size: 18px;
+          }
+          &__swiper{
+            margin-top: 30px;
+            @media (min-width: 992px){
+              margin-top: 0px;
+            }
+            &__wrapper{
+              &__slide{
+                border-radius: 16px;
+                &__button{
+                  border-radius: 20px;
+                  background-color: white;
+                  -webkit-transition: .1s ease-in-out;
+                  transition: .1s ease-in-out;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  margin-right: 8px;
+                  padding-right: 12px;
+                  padding-left: 12px;
+                  font-size: 12px;
+                  font-family: font-bold;
+                  text-decoration: unset;
+                  color: #212529;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;              
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__button-next{
+        position: unset;
+        background: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-image: url(https://www.mymarket.ge/react/build/static/media/slider-right.f78d9890.svg);
+        width: 32px;
+        height: 32px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;    
+        @media (min-width: 992px){
+          width: 42px;
+          height: 42px;
+        }
+        &::after{
+          content: "";
+        }
+      }
+      &__button-prev{
+        position: unset;
+        background: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-image: url(https://www.mymarket.ge/react/build/static/media/slider-left.90b7afc8.svg);
+        width: 32px;
+        height: 32px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: auto;
+        margin-right: 6px;
+        @media (min-width: 992px){
+          width: 42px;
+          height: 42px;
+        }
+        &::after{
+          content: "";
+        }
+        
+      }
+
+    }
+  }
+
+
+  &__content{
+    display: flex;
+    &__box{
+      &__banner{
+        width: 160px;
+        height: 160px;
+      }
+
+    }
+  }
+
+}
 
 
 .category-filters__ul:hover+.category-filters__pop-up{

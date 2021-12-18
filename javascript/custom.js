@@ -191,6 +191,34 @@ var swiper = new Swiper(".mySwiper-banners", {
   });
 
 
+  var swiper = new Swiper(".oriented-prod__slider__box__title-box__component__swiper", {
+    slidesPerView: 2.3,
+    spaceBetween: 15,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+     breakpoints: {
+        // when window width is >= 480px
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 27,
+        },
+        // when window width is >= 640px
+        1200: {
+          slidesPerView: 5.5,
+          spaceBetween: 20,
+
+        }
+     },
+  });
+
+
 
 
   var swiper = new Swiper(".recomended__slider__box__title-box__component__swiper", {
@@ -222,3 +250,39 @@ var swiper = new Swiper(".mySwiper-banners", {
         }
      },
   });
+
+
+
+
+
+
+
+  // var swiper = new Swiper(".oriented-prod__content__box-slider__swiper", {
+  //   slidesPerView: 2,
+  //   spaceBetween: 8,
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //   },
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
+  //    breakpoints: {
+  //       // when window width is >= 480px
+  //       576: {
+  //         slidesPerView: 3,
+  //         spaceBetween: 8,
+  //       },
+  //       768: {
+  //         slidesPerView: 3,
+  //         spaceBetween: 8,
+  //       },
+  //       // when window width is >= 640px
+  //       1200: {
+  //         slidesPerView: 1,
+  //         spaceBetween: 8,
+
+  //       }
+  //    },
+  // });
