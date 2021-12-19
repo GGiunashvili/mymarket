@@ -1652,7 +1652,7 @@ span.header-divide-line-second {
 
 @media (min-width: 992px) {
   .oriented-prod__slider {
-    margin-bottom: 60px;
+    margin-bottom: 34px;
   }
 }
 
@@ -1824,15 +1824,182 @@ span.header-divide-line-second {
   content: "";
 }
 
-.oriented-prod__content {
+.oriented-prod__grid-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.oriented-prod__content__box__banner {
-  width: 160px;
-  height: 160px;
+@media (min-width: 992px) {
+  .oriented-prod__grid-slider {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.oriented-prod__grid-slider__pre {
+  position: relative;
+  border-radius: 16px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 992px) {
+  .oriented-prod__grid-slider__pre {
+    width: auto;
+    margin-right: 24px;
+    margin-bottom: unset;
+  }
+}
+
+.oriented-prod__grid-slider__pre__img {
+  border-radius: 16px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .oriented-prod__grid-slider__pre__img {
+    max-height: auto;
+    width: auto;
+  }
+}
+
+.oriented-prod__grid-slider__pre__text {
+  position: absolute;
+  top: 16px;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: "case" on;
+          font-feature-settings: "case" on;
+  font-size: 21px;
+  font-family: font-bold;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .oriented-prod__grid-slider__pre__text {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 768px) {
+  .oriented-prod__grid-slider__swiper {
+    max-height: 404px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.oriented-prod__grid-slider__swiper__wrapper {
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .oriented-prod__grid-slider__swiper__wrapper {
+    height: inherit;
+  }
+}
+
+.oriented-prod__grid-slider__swiper__wrapper__slide {
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  padding: 13px 26px 13px 13px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  border-radius: 16px;
+  height: 120px;
+}
+
+@media (min-width: 992px) {
+  .oriented-prod__grid-slider__swiper__wrapper__slide {
+    height: calc((100% - 30px) / 2) !important;
+  }
+}
+
+.oriented-prod__grid-slider__swiper__wrapper__slide__img {
+  max-height: 80px;
+  max-width: 80px;
+  margin-right: 38px;
+  border-radius: 12px;
+}
+
+@media (min-width: 992px) {
+  .oriented-prod__grid-slider__swiper__wrapper__slide__img {
+    max-height: 160px;
+    max-width: 160px;
+  }
+}
+
+.oriented-prod__grid-slider__swiper__wrapper__slide__box {
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+
+.oriented-prod__grid-slider__swiper__wrapper__slide__box__title {
+  color: #272a37;
+  font-size: 14px;
+  font-family: font-medium;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 21px;
+}
+
+@media (min-width: 992px) {
+  .oriented-prod__grid-slider__swiper__wrapper__slide__box__title {
+    -webkit-line-clamp: 3;
+  }
+}
+
+.oriented-prod__grid-slider__swiper__wrapper__slide__box__price {
+  color: #454b57;
+  font-family: font-bold;
+  line-height: 21px;
+  font-size: 18px;
+}
+
+.oriented-prod__grid-slider__swiper__wrapper__slide__box__see-all {
+  text-transform: uppercase;
+  -webkit-font-feature-settings: "case" on;
+          font-feature-settings: "case" on;
+  font-size: 18px;
+  font-family: font-medium;
+  color: #272a37;
+}
+
+.oriented-prod__grid-slider__swiper__wrapper__slide__box__see-all-p {
+  color: #4a6cfa !important;
+  margin-top: 18px;
+  font-size: 13px;
+  font-family: font-medium;
 }
 
 .category-filters__ul:hover + .category-filters__pop-up {

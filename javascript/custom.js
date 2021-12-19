@@ -286,3 +286,43 @@ var swiper = new Swiper(".mySwiper-banners", {
   //       }
   //    },
   // });
+
+
+  var swiper = new Swiper(".oriented-prod__grid-slider__swiper", {
+    slidesPerView: 1,
+    grid: {
+      rows: 4,
+    },
+    spaceBetween: 12,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 12,
+        grid: {
+          rows: 2,
+        },
+        
+      },
+      992: {
+        slidesPerView: 1,
+        grid: {
+          rows: 4,
+        },
+        
+      },
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 28,
+        grid: {
+          rows: 2,
+
+        },
+        
+      }
+   },
+            
+  });
