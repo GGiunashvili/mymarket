@@ -2196,6 +2196,117 @@ span.header-divide-line-second {
   line-height: 14px;
 }
 
+.sales__box {
+  margin-bottom: 200px;
+}
+
+.sales__box__title {
+  margin-bottom: 24px;
+}
+
+.sales__box__title__p {
+  color: #272a37;
+  font-size: 18px;
+  font-family: font-bold;
+}
+
+.sales__box__slider__swiper__wrapper__slide {
+  border-radius: 16px;
+  padding: 12px;
+  background-color: white;
+}
+
+@media (min-width: 992px) {
+  .sales__box__slider__swiper__wrapper__slide {
+    padding: 0 12px;
+  }
+}
+
+.sales__box__slider__swiper__wrapper__slide__main-box__div__price {
+  color: black;
+  font-family: font-bold;
+  font-size: 12px;
+  line-height: 21px;
+  text-decoration: line-through;
+}
+
+@media (min-width: 992px) {
+  .sales__box__slider__swiper__wrapper__slide__main-box__div__price {
+    display: none;
+  }
+}
+
+.sales__box__slider__swiper__wrapper__slide__main-box__div__sale-price {
+  color: #0ec604;
+  font-family: font-bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+@media (min-width: 992px) {
+  .sales__box__slider__swiper__wrapper__slide__main-box__div__sale-price {
+    display: none;
+  }
+}
+
+.sales__box__slider__swiper__wrapper__slide__main-box__div__parent {
+  margin: 20px 12px;
+  position: relative;
+}
+
+.sales__box__slider__swiper__wrapper__slide__main-box__div__parent:hover > .sales__box__slider__swiper__wrapper__slide__main-box__div__parent__card {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  bottom: 0;
+  height: 100%;
+  padding: 10px;
+}
+
+.sales__box__slider__swiper__wrapper__slide__main-box__div__parent__div {
+  border: 1px solid #f4f4f4;
+  border-radius: 10px;
+}
+
+.sales__box__slider__swiper__wrapper__slide__main-box__div__parent__card {
+  position: absolute;
+  background-color: rgba(39, 42, 55, 0.95);
+  border-radius: 10px;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+}
+
+.sales__box__slider__swiper__wrapper__slide__main-box__div__parent__card__price {
+  color: white;
+  font-family: font-bold;
+  font-size: 12px;
+  line-height: 21px;
+  text-decoration: line-through;
+}
+
+.sales__box__slider__swiper__wrapper__slide__main-box__div__parent__card__sale-price {
+  color: #0ec604;
+  font-family: font-bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
 .category-filters__ul:hover + .category-filters__pop-up {
   display: -webkit-box;
   display: -ms-flexbox;

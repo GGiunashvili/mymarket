@@ -365,3 +365,49 @@ var swiper = new Swiper(".mySwiper-banners", {
      },
   });
 
+
+
+
+
+
+
+
+
+
+  
+
+  var swiper = new Swiper(".sales__box__slider__swiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+ 
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".merchants__title__button-next",
+      prevEl: ".merchants__title__button-prev",
+    },
+     breakpoints: {
+        // when window width is >= 480px
+        576: {
+          slidesPerView: 1,
+          spaceBetween: 27,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 27,
+        },
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 27,
+        },
+        // when window width is >= 640px
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+
+        }
+     },
+  });
+
