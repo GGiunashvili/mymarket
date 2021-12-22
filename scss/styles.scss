@@ -31,7 +31,6 @@ header{
   @media (min-width: 992px){
     max-width: 732px;
   }
-
   &__main-logo{
     display: flex;
     align-items: center;
@@ -84,7 +83,6 @@ header{
         background-color: #f1f3f6;
       }
     }
-    
     @media (min-width: 768px){
       &__img-upload{
         right: 57px;
@@ -102,7 +100,6 @@ header{
         background-color: rgba(137,150,174,.25);
       }
     }
-    
     &__button {
       position: absolute;
       display: flex;
@@ -137,10 +134,8 @@ header{
         
       }
     }
-
   }
 }
-
 .header-navigation{
   position: relative;
   &__add-product{
@@ -242,7 +237,6 @@ header{
       font-family: font-bold;
     }
   }
-
   &__pop-up-ul{
     display: none;
     min-width: 140px; 
@@ -260,8 +254,6 @@ header{
       padding-right: 24px;
       padding-top: 8px;
       padding-bottom: 8px;
-      // color: #8996ae;
-
       &:hover{
         background-color: #f1f3f6;
       }
@@ -286,7 +278,6 @@ span.header-divide-line-second{
     margin-right: 0;
     margin-left: 12px;
 }
-
 .header-subcircuits{
   border-top: 2px solid #f1f3f6;
   padding-top: 10px;
@@ -319,7 +310,6 @@ span.header-divide-line-second{
       font-family: font-medium;
       &:hover{
         background-color: rgba(223,166,166,.8);
-
       }
       &__svg{
         background-image: url(https://www.mymarket.ge/react/build/static/media/Sale-cats.43450326.svg);
@@ -341,10 +331,6 @@ span.header-divide-line-second{
     }
   }
 }
-
-
-
-
 .main-content{
   margin-top: 16px;
   @media (min-width: 768px){
@@ -356,7 +342,6 @@ span.header-divide-line-second{
     padding: 30px 0 12px;
     border-radius: 16px;
     margin-right: 24px;
-    
     &__ul{
       width: 100%;
       &__li{
@@ -449,7 +434,6 @@ span.header-divide-line-second{
     }
   }
 }
-
 .search-more{
   margin-top: 40px;
   margin-bottom: 24px;
@@ -462,16 +446,11 @@ span.header-divide-line-second{
     margin-bottom: 28px;
     @media (min-width: 768px){
       margin-bottom: 0px;
-      // padding-right: 16px;
-      // padding-left: 16px;
     }
     &__box{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // background-color: red;
-      // padding-right: 16px;
-      // padding-left: 16px;
       position: relative;
       @media (min-width: 768px){
       padding-right: 0px;
@@ -579,13 +558,10 @@ span.header-divide-line-second{
         }
         &::after{
           content: "";
-        }
-        
+        } 
       }
-
     }
   }
-  
   &__title-box{
     display: flex;
     align-items: center;
@@ -624,7 +600,6 @@ span.header-divide-line-second{
     margin-right: 20px;
     &__collapse{
       width: 100%;
-    
       &__body{
         display: flex;
         align-items: center;
@@ -637,10 +612,8 @@ span.header-divide-line-second{
           display: flex;
           align-items: center;
           justify-content: space-between;
-        
           &__icon{
             color:red;
-     
             &__svg{
               background-image: url(https://www.mymarket.ge/react/build/static/media/sl-seacrh.3ba59344.svg);
               width: 40px;
@@ -652,24 +625,19 @@ span.header-divide-line-second{
               &:hover{
                 transform: scale(1.1);
                 transition: .2s ease-in-out;
-
               }
             }
           }
-  
         }
       }
     }
-    
   }
-
 }
 .home-page-banner{
   width: 100%;
   text-align: center;
   border-radius: 16px;
   background-color: #e4e7ed;
-
   @media (min-width: 768px){
     background: none;
   }
@@ -685,15 +653,6 @@ span.header-divide-line-second{
     }
   }
 }
-
-
-
-
-
-
-
-
-
 .main-banners{
   display: flex;
   flex-direction: column;
@@ -812,15 +771,10 @@ span.header-divide-line-second{
             }
           }
         }
-        
       }
     }
   }
 }
-
-
-
-
 .section-banner{
   display: flex;
   align-items: center;
@@ -900,10 +854,6 @@ span.header-divide-line-second{
     }
   }
 }
-
-
-
-
 .vip-content{
   background-color: white;
   overflow: hidden;
@@ -940,11 +890,9 @@ span.header-divide-line-second{
       font-family: font-medium;
       color: #4a6cfa;
       font-size: 13px;
-      text-decoration: underline;
-      
+      text-decoration: underline;   
     }
   }
-
   &__slider{
     &__swiper{
       overflow: hidden;
@@ -958,7 +906,6 @@ span.header-divide-line-second{
             height: 130px;
             &__img{
               border-radius: 10px;
-
             }
           }
           &__title-box{
@@ -1000,13 +947,6 @@ span.header-divide-line-second{
     }
   }
 }
-
-
-
-
-
-
-
 .category{
   &__slider{
     margin-bottom: 40px;
@@ -1033,9 +973,7 @@ span.header-divide-line-second{
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            
             &__img{
-          
             }
 
           }
@@ -1053,23 +991,6 @@ span.header-divide-line-second{
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .recomended{
   &__slider{
     margin-bottom: 40px;
@@ -1086,9 +1007,6 @@ span.header-divide-line-second{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // background-color: red;
-      // padding-right: 16px;
-      // padding-left: 16px;
       position: relative;
       @media (min-width: 768px){
       padding-right: 0px;
@@ -1196,9 +1114,7 @@ span.header-divide-line-second{
         &::after{
           content: "";
         }
-        
       }
-
     }
     &__swiper{
       &__wrapper{
@@ -1254,10 +1170,6 @@ span.header-divide-line-second{
     }
   }
 }
-
-
-
-
 .oriented-prod{
   &__slider{
     margin-bottom: 40px;
@@ -1274,9 +1186,6 @@ span.header-divide-line-second{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // background-color: red;
-      // padding-right: 16px;
-      // padding-left: 16px;
       position: relative;
       @media (min-width: 768px){
       padding-right: 0px;
@@ -1434,7 +1343,6 @@ span.header-divide-line-second{
         @media (min-width: 992px){
           font-size: 38px;
         }
-
       }
     }
     &__swiper{
@@ -1464,10 +1372,6 @@ span.header-divide-line-second{
           overflow: hidden;
           border-radius: 16px;
           height: 120px;
-          // height: 120px!important;
-          // width: 100%!important;
-          // margin-top: 12px;
-          
           @media (min-width: 992px){
             height: calc((100% - 30px) / 2)!important;
           }
@@ -1522,27 +1426,10 @@ span.header-divide-line-second{
             }
           }
         }
-
       }
     }
   }
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .merchants{
   &__title{
     margin-bottom: 24px;
@@ -1685,11 +1572,7 @@ span.header-divide-line-second{
     }
   }
 }
-
-
-
-.sales{
-  
+.sales{ 
   &__box{
     margin-bottom: 200px;
     &__title{
@@ -1749,13 +1632,8 @@ span.header-divide-line-second{
                     border: 1px solid #f4f4f4;
                     border-radius: 10px;
                     &__img{
-    
                     }
-                    
-                 
-  
                   }
-  
                   &__card{
                     position: absolute;
                     background-color: rgba(39,42,55,.95);
@@ -1768,11 +1646,7 @@ span.header-divide-line-second{
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    opacity: 0;            
-                    // height: calc(100% - 20px);
-                  // width: calc(100% - 20px);
-                  // /* right: 0; */
-                  // transform: translate(10px, -10px);      
+                    opacity: 0;                
                     &__price{
                       color: white;
                       font-family: font-bold;
@@ -1792,21 +1666,11 @@ span.header-divide-line-second{
               }
             }
           }
-
         }
       }
     }
   }
 }
-
-
-
-
-
-
-
-
-
 .service{
   margin-bottom: 64px;
   @media (min-width: 992px){
@@ -1897,7 +1761,6 @@ span.header-divide-line-second{
       }
     }
   }
-
   &__slider{
     &__swiper{
       &__wrapper{
@@ -1912,8 +1775,6 @@ span.header-divide-line-second{
             border-radius: 16px;
             &__img{
               border-radius: 16px;
-
-
             }
           }
           &__sec-two{
@@ -1947,18 +1808,13 @@ span.header-divide-line-second{
               line-height: 21px;
               font-family: font-bold;
               color: #8996ae;
-
-
             }
           }
-
         }
       }
     }
   }
 }
-
-
 .how-to-buy{
   background-color: white;
   text-align: center;
@@ -1967,7 +1823,6 @@ span.header-divide-line-second{
   &__cont{
     &__title{
       &__img{
-
       }
       &__text{
         color: #272a37;
@@ -1987,7 +1842,6 @@ span.header-divide-line-second{
         flex-direction: row;
         align-items: flex-start;
       }
-
       &__div{
         max-width: 192px;
         overflow: hidden;
@@ -2018,9 +1872,7 @@ span.header-divide-line-second{
             opacity: 0;
             position: absolute;
             animation-delay: 1s;
-        
           }
-
         }
         &__p{
           color: #272a37!important;
@@ -2088,8 +1940,6 @@ span.header-divide-line-second{
     }
   }
 }
-
-
 .footer{
   padding-top: 40px;
   border-bottom: 1px solid rgba(0,0,0,.1);
@@ -2128,8 +1978,6 @@ span.header-divide-line-second{
         }
       }
     }
-
-
     &__main{
         &__social{
           &__title{

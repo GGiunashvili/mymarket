@@ -13,14 +13,9 @@ var swiper = new Swiper(".main-banners__swiper", {
     },
 });
 
-
-
-
-
 var swiper = new Swiper(".mySwiper-banners", {
     slidesPerView: 2,
-    spaceBetween: 8,
- 
+    spaceBetween: 8, 
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -36,8 +31,6 @@ var swiper = new Swiper(".mySwiper-banners", {
         }
      },
   });
-
-
 
   var swiper = new Swiper(".mySwiper-more-search", {
     slidesPerView: 1,
@@ -66,10 +59,6 @@ var swiper = new Swiper(".mySwiper-banners", {
      },
   });
 
-
-
-
-
   var swiper = new Swiper(".search-more__slider__box__title-box__component__swiper", {
     slidesPerView: 1,
     spaceBetween: 8,
@@ -92,8 +81,6 @@ var swiper = new Swiper(".mySwiper-banners", {
         }
      },
   });
-
-
 
   var swiper = new Swiper(".mySwiper-vip-slider", {
     slidesPerView: 2.3,
@@ -126,12 +113,6 @@ var swiper = new Swiper(".mySwiper-banners", {
      },
   });
 
-
-
-
-
-
-
   var swiper = new Swiper(".category__slider__swiper", {
     slidesPerView: 2,
     spaceBetween: 16,
@@ -162,9 +143,6 @@ var swiper = new Swiper(".mySwiper-banners", {
         }
      },
   });
-
-
-
 
   var swiper = new Swiper(".recomended__slider__swiper", {
     slidesPerView: 2.3,
@@ -204,7 +182,6 @@ var swiper = new Swiper(".mySwiper-banners", {
       el: ".swiper-pagination",
       clickable: true,
     },
-
      breakpoints: {
         // when window width is >= 480px
         576: {
@@ -223,9 +200,6 @@ var swiper = new Swiper(".mySwiper-banners", {
         }
      },
   });
-
-
-
 
   var swiper = new Swiper(".recomended__slider__box__title-box__component__swiper", {
     slidesPerView: 2,
@@ -256,43 +230,6 @@ var swiper = new Swiper(".mySwiper-banners", {
         }
      },
   });
-
-
-
-
-
-
-
-  // var swiper = new Swiper(".oriented-prod__content__box-slider__swiper", {
-  //   slidesPerView: 2,
-  //   spaceBetween: 8,
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //   },
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  //    breakpoints: {
-  //       // when window width is >= 480px
-  //       576: {
-  //         slidesPerView: 3,
-  //         spaceBetween: 8,
-  //       },
-  //       768: {
-  //         slidesPerView: 3,
-  //         spaceBetween: 8,
-  //       },
-  //       // when window width is >= 640px
-  //       1200: {
-  //         slidesPerView: 1,
-  //         spaceBetween: 8,
-
-  //       }
-  //    },
-  // });
-
 
   var swiper = new Swiper(".oriented-prod__grid-slider__swiper", {
     slidesPerView: 1,
@@ -334,8 +271,6 @@ var swiper = new Swiper(".mySwiper-banners", {
             
   });
 
-
-
   var swiper = new Swiper(".merchants__slider__swiper", {
     slidesPerView: 3,
     spaceBetween: 16,
@@ -369,18 +304,7 @@ var swiper = new Swiper(".mySwiper-banners", {
 
         }
      },
-  });
-
-
-
-
-
-
-
-
-
-
-  
+  });  
 
   var swiper = new Swiper(".sales__box__slider__swiper", {
     slidesPerView: 1,
@@ -416,10 +340,6 @@ var swiper = new Swiper(".mySwiper-banners", {
         }
      },
   });
-
-
-
-
 
   var swiper = new Swiper(".service__slider__swiper", {
     slidesPerView: 1,
@@ -464,17 +384,6 @@ var swiper = new Swiper(".mySwiper-banners", {
    },
             
   });
-
-
-
-
-
-
-
-
-
-
-
 
 
      //Get the button
