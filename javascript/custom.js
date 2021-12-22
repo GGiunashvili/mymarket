@@ -1,9 +1,15 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".main-banners__swiper", {
     loop: true,
+    // observer: true,
+    // observeParents: true,
+    // parallax:true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     navigation: {
-    nextEl: ".main-banners__swiper__button-next",
-    prevEl: ".main-banners__swiper__button-prev",
-    preventClicks: false,
+      nextEl: ".main-banners__swiper__button-next",
+      prevEl: ".main-banners__swiper__button-prev",
     },
 });
 
@@ -300,14 +306,14 @@ var swiper = new Swiper(".mySwiper-banners", {
     },
    
     breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 12,
-        grid: {
-          rows: 2,
-        },
+      // 768: {
+      //   slidesPerView: 2,
+      //   spaceBetween: 28,
+      //   grid: {
+      //     rows: 2,
+      //   },
         
-      },
+      // },
       992: {
         slidesPerView: 1,
         grid: {
@@ -339,8 +345,8 @@ var swiper = new Swiper(".mySwiper-banners", {
       clickable: true,
     },
     navigation: {
-      nextEl: ".merchants__title__button-next",
-      prevEl: ".merchants__title__button-prev",
+      nextEl: ".merchants__title__box__button-next",
+      prevEl: ".merchants__title__box__button-prev",
     },
      breakpoints: {
         // when window width is >= 480px
@@ -385,8 +391,8 @@ var swiper = new Swiper(".mySwiper-banners", {
       clickable: true,
     },
     navigation: {
-      nextEl: ".merchants__title__button-next",
-      prevEl: ".merchants__title__button-prev",
+      nextEl: ".merchants__title__box__button-next",
+      prevEl: ".merchants__title__box__button-prev",
     },
      breakpoints: {
         // when window width is >= 480px
@@ -411,3 +417,82 @@ var swiper = new Swiper(".mySwiper-banners", {
      },
   });
 
+
+
+
+
+  var swiper = new Swiper(".service__slider__swiper", {
+    slidesPerView: 1,
+    grid: {
+      rows: 2,
+    },
+    spaceBetween: 12,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".service__title__button-next",
+      prevEl: ".service__title__button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 12,
+        grid: {
+          rows: 2,
+        },
+        
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        grid: {
+          rows: 2,
+        },
+        
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        grid: {
+          rows: 2,
+
+        },
+        
+      }
+   },
+            
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+     //Get the button
+     var mybutton = document.getElementById("myBtn");
+        
+     // When the user scrolls down 20px from the top of the document, show the button
+     window.onscroll = function() {scrollFunction()};
+     
+     function scrollFunction() {
+       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         mybutton.style.display = "flex";
+       } else {
+         mybutton.style.display = "none";
+       }
+     }
+     
+     // When the user clicks on the button, scroll to the top of the document
+     function topFunction() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+     }
