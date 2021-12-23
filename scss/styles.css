@@ -1287,6 +1287,11 @@ span.header-divide-line-second {
           align-items: flex-start;
 }
 
+.vip-content__slider__swiper__wrapper__slide:hover .vip-content__slider__swiper__wrapper__slide__title-box__title-box__title {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
 .vip-content__slider__swiper__wrapper__slide__img-box {
   border-radius: 10px;
   height: 130px;
@@ -1324,6 +1329,7 @@ span.header-divide-line-second {
   overflow: hidden;
   text-align: start;
   font-family: font-medium;
+  text-decoration: none;
 }
 
 .vip-content__slider__swiper__wrapper__slide__title-box__title:hover {
@@ -1861,7 +1867,7 @@ span.header-divide-line-second {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 48px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1874,6 +1880,7 @@ span.header-divide-line-second {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 64px;
   }
 }
 
@@ -2227,7 +2234,13 @@ span.header-divide-line-second {
 }
 
 .sales__box {
-  margin-bottom: 200px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 992px) {
+  .sales__box {
+    margin-bottom: 104px;
+  }
 }
 
 .sales__box__title {
@@ -2468,6 +2481,7 @@ span.header-divide-line-second {
   padding: 16px;
   border-radius: 16px;
   height: calc((100% - 30px) / 2);
+  text-decoration: none;
 }
 
 .service__slider__swiper__wrapper__slide__sec-one {

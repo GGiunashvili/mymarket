@@ -901,6 +901,10 @@ span.header-divide-line-second{
           display: flex;
           flex-direction: column;
           align-items: flex-start;
+          &:hover &__title-box__title-box__title{
+            color: #0a58ca;
+            text-decoration: underline;
+          }
           &__img-box{
             border-radius: 10px;
             height: 130px;
@@ -925,6 +929,7 @@ span.header-divide-line-second{
               overflow: hidden;
               text-align: start;
               font-family: font-medium;
+              text-decoration: none;
               &:hover{
                 color: #325afa;
                 text-decoration: underline;
@@ -1304,10 +1309,11 @@ span.header-divide-line-second{
   &__grid-slider{
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 48px;
     flex-direction: column;
     @media (min-width: 992px){
       flex-direction: row;
+      margin-bottom: 64px;
     }
     &__pre{
       position: relative;
@@ -1574,7 +1580,10 @@ span.header-divide-line-second{
 }
 .sales{ 
   &__box{
-    margin-bottom: 200px;
+    margin-bottom: 80px;
+    @media (min-width: 992px){
+      margin-bottom: 104px;
+    }
     &__title{
       margin-bottom: 24px;
       &__p{
@@ -1769,6 +1778,7 @@ span.header-divide-line-second{
           padding: 16px;
           border-radius: 16px;
           height: calc((100% - 30px) / 2);
+          text-decoration: none;
           &__sec-one{
             height: 96px;
             width: 114px;
